@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  :root {
+    --primary-yellow: #FFD600;
+    --neutral-gray: #4B5563;
+  }
+  
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  /* Custom Buttons */
+  .btn-yellow {
+    background-color: var(--primary-yellow);
+    color: black;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+  }
+  .btn-yellow:hover {
+    background-color: #facc15;
+  }
+  
+  .btn-dark {
+    background-color: #111827;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+  }
+  .btn-dark:hover {
+    background-color: #1f2937;
+  }
+  
+  /* Carousel Image */
+  .carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  
+  #carousel-track {
+    display: flex;
+    gap: 1.5rem; /* Matches Tailwind's space-x-6 */
+    cursor: grab;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-img {
+    width: 18rem;
+    height: 18rem;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-slideInUp {
+  animation: slideInUp 1.2s ease-out forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
